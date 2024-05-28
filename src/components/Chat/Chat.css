@@ -1,0 +1,47 @@
+@media screen and (device-aspect-ratio: 9/16) { select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"]{ font-size: 16px; } }
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    width: 100vw;
+    overflow-x: auto;
+  }
+
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    
+    height: 80%;
+    width: 50%;
+  }
+  .secondContainer{
+    height: 80%;
+    width: 30%;
+    padding: 0 1%;
+    /* margin-right:5%; */
+  }
+  
+  @media  (max-width: 780px) {
+    
+    .outerContainer {
+      width:100%;
+      height: 100%;
+      flex-direction: column;
+    }
+    .container,.secondContainer{
+    width: 100%;
+    height: 95vh;
+    }
+    .secondContainer{
+      padding:0 3%;
+    }
+  }
+  
